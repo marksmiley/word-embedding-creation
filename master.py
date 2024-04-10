@@ -21,10 +21,10 @@ from utility import text_preprocessing, create_unique_word_dict
 texts = pd.read_csv('input/sample.csv')
 texts = [x for x in texts['text']]
 
-# Defining the window for context
+# Defining the window for context ?
 window = 2
 
-# Creating a placeholder for the scanning of the word list
+# Creating a placeholder for the scanning of the word list ?
 word_lists = []
 all_text = []
 
@@ -98,7 +98,6 @@ model.fit(
     batch_size=256,
     epochs=1000
     )
-
 # Obtaining the weights from the neural network. 
 # These are the so called word embeddings
 
